@@ -13,6 +13,9 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://app.snipcart.com">
+    <link rel="preconnect" href="https://cdn.snipcart.com">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.20/default/snipcart.css" />
 </head>
 
 <body class="is-preload">
@@ -23,15 +26,16 @@
         <!-- Intro -->
         <section class="intro">
             <header>
-                <h1>ARK<br />ROTITACO</h1>
+                <h1>ARK<br />ROTI TACO</h1>
                 <p>
-                    not an ordinary taco
+                    not an ordinary taco </br>
+                    <a href="#order"><span class="label ">#Order Now</span>  </a>
                 </p>
-                <ul class="actions">
-                    <li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
-                </ul>
-                <iframe width="760" height="200" src="https://www.youtube.com/embed/DL52OW3HAho" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+                <div class="content">
+                    <iframe width="760" height="200" src="https://www.youtube.com/embed/DL52OW3HAho" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </header>
             <div class="content">
                 <span class="image fill" data-position="center"><img src="images/foodhero.jpg" alt="" /></span>
@@ -41,12 +45,104 @@
         <!-- Section -->
         <section id="first">
             <header>
-                <h2>A little sneak peak into this weeks Roti Taco </h2>
+                <h2>Behold, a sneak peak into this weeks Roti Taco </h2>
             </header>
             <div class="content">
                 <p><strong>Slow cooked & pulled BBQ beef short rib ,</strong> coriander slaw , pickled red onion , comeback sauce & BBQ corn nut crunch !</p>
-                <span class="image main"><img src="images/foodhero.jpg" alt="" /></span>
+                <!-- <span class="image main"><img src="images/foodhero.jpg" alt="" /></span> -->
             </div>
+        </section>
+
+        <section id="order">
+            <header>
+                <!-- <h2>The Order</h2> -->
+                <h2 id="out">Order here (11 Sept)</h2>
+            </header>
+            <div class="content">
+
+                <h4 class="major" id="out">Cart items :
+                    <span class="snipcart-items-count"></span></h4>
+                <h4>Total :
+                    <span class="snipcart-total-price"></span></h4>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Taco</td>
+                                <td>100</td>
+                                <td>
+                                    <ul class="icons" onclick="changeContent_11()">
+                                        <button class="snipcart-add-item" data-item-id="Taco" data-item-price="100" data-item-url="" data-item-description="" data-item-image="" data-item-name="Taco">
+											Add to cart
+										  </button>
+                                        <!-- <li><a href="#0" class="icon solid fa-cart-plus "><span class="label ">Twitter</span></a></li> -->
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Combo</td>
+                                <td>110</td>
+                                <td>
+                                    <ul class="icons" onclick="changeContent_11()">
+                                        <button class="snipcart-add-item" data-item-id="Combo" data-item-price="110" data-item-url="" data-item-description="" data-item-image="" data-item-name="Combo">
+											Add to cart
+										  </button>
+                                        <!-- <li><a href="#0" class="icon solid fa-cart-plus "><span class="label ">Twitter</span></a></li> -->
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Desert</td>
+                                <td>120</td>
+                                <td>
+                                    <ul class="icons" onclick="changeContent_11()">
+                                        <button class="snipcart-add-item" data-item-id="Desert" data-item-price="120" data-item-url="" data-item-description="" data-item-image="" data-item-name="Desert">
+											Add to cart
+										  </button>
+                                        <!-- <li><a href="#0" class="icon solid fa-cart-plus "><span class="label ">Twitter</span></a></li> -->
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Sauce</td>
+                                <td>130</td>
+                                <td>
+                                    <ul class="icons" onclick="changeContent_11()">
+                                        <button class="snipcart-add-item" data-item-id="Sauce" data-item-price="130" data-item-url="" data-item-description="" data-item-image="" data-item-name="Sauce">
+											Add to cart
+										  </button>
+                                        <!-- <li><a href="#0" class="icon solid fa-cart-plus "><span class="label ">Twitter</span></a></li> -->
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Merch</td>
+                                <td>140</td>
+                                <td>
+                                    <ul class="icons" onclick="changeContent_11()">
+                                        <button class="snipcart-add-item" data-item-id="Merch" data-item-price="140" data-item-url="" data-item-description="" data-item-image="" data-item-name="Merch">
+											Add to cart
+										  </button>
+                                        <!-- <li><a href="#0" class="icon solid fa-cart-plus "><span class="label ">Twitter</span></a></li> -->
+                                    </ul>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <h4 class="major" id="out">Cart items :
+                        <span class="snipcart-items-count"></span>
+                        <span class="snipcart-total-price"></span></h4>
+                    <!-- <textarea name="demo-message " id="confirm_msg_test" placeholder="Add something to the cart." rows="2 "></textarea> -->
+                    <button class="snipcart-checkout">Click here to checkout</button>
+                </div>
         </section>
 
         <!-- Section -->
@@ -68,7 +164,7 @@
         </section>
 
         <!-- Section -->
-        <section>
+        <!-- <section>
             <header>
                 <h2>COMPETITION TIME :</h2>
             </header>
@@ -83,10 +179,10 @@
                     <ul class="actions">
                         <li><input type="Submit" value="Send Message" class="button primary" /></li>
                     </ul>
-                </form>
+                </form> -->
 
-                <!-- Section -->
-                <section>
+        <!-- Section -->
+        <!-- <section>
                     <header>
                         <h3>On the side</h3>
                     </header>
@@ -98,67 +194,83 @@
                             <a href="images/gallery/fulls/04.jpg" class="landscape"><img src="images/gallery/thumbs/oreo.jpg" alt="" /></a>
                         </div>
                     </div>
-                </section>
+                </section> -->
 
-                <!-- Section -->
-                <section>
-                    <header>
-                        <h3>Meet the team</h3>
-                        <p>This Women’s Month - we want to shed the light & introduce you to some of the ALL FEMALE cast behind @arkrotitaco , Meet Nontlana (left) & Azola (right ) : 2 incredibly passionate women wanting to simply learn , work with good
-                            food and make other people HAPPY through serving amazing food. Your support is what drives them ❤️❤️❤️ Thank you for inspiring us .
-                        </p>
-                    </header>
-                    <div class="content">
-                        <div class="gallery">
-                            <a href="images/gallery/fulls/05.jpg" class="landscape"><img src="images/gallery/thumbs/team.jpg" alt="" /></a>
-                            <a href="images/gallery/fulls/06.jpg"><img src="images/gallery/thumbs/teamnew.jpg" alt="" /></a>
-                            <a href="images/gallery/fulls/07.jpg"><img src="images/gallery/thumbs/clair.jpg" alt="" /></a>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Section -->
-                <section>
-                    <header>
-                        <h3>Our fans</h3>
-                        <p>Thank you!<br />.<br />.<br />.</p>
-                        <ul class="items">
-                            <li>
-                                <h3>Email</h3>
-                                <a href="#">information@untitled.ext</a>
-                            </li>
-                            <li>
-                                <h3>Phone</h3>
-                                <a href="#">(000) 000-0000</a>
-                            </li>
-                            <li>
-                                <h3>Address</h3>
-                                <span>1234 Somewhere Road, Nashville, TN 00000</span>
-                            </li>
-                            <li>
-                                <h3>Elsewhere</h3>
-                                <ul class="icons">
-                                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                                    <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                                    <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                                    <li><a href="#" class="icon brands fa-codepen"><span class="label">Codepen</span></a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </header>
-                    <div class="content">
-                        <div class="gallery">
-                            <a href="images/gallery/fulls/08.jpg" class="portrait"><img src="images/gallery/thumbs/cxlong.png" alt="" /></a>
-                            <a href="images/gallery/fulls/09.jpg" class="portrait"><img src="images/gallery/thumbs/09.jpg" alt="" /></a>
-                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
-                        </div>
-                    </div>
-
-                </section>
-
+        <!-- Section -->
+        <section>
+            <header>
+                <h3>Meet the team</h3>
+                <p>This Women’s Month - we want to shed the light & introduce you to some of the ALL FEMALE cast behind @arkrotitaco , Meet Nontlana (left) & Azola (right ) : 2 incredibly passionate women wanting to simply learn , work with good food and
+                    make other people HAPPY through serving amazing food. Your support is what drives them ❤️❤️❤️ Thank you for inspiring us .
+                </p>
+            </header>
+            <div class="content">
+                <div class="gallery">
+                    <a href="images/gallery/fulls/05.jpg" class="landscape"><img src="images/gallery/thumbs/team.jpg" alt="" /></a>
+                    <a href="images/gallery/fulls/06.jpg"><img src="images/gallery/thumbs/teamnew.jpg" alt="" /></a>
+                    <a href="images/gallery/fulls/07.jpg"><img src="images/gallery/thumbs/clair.jpg" alt="" /></a>
+                </div>
             </div>
+        </section>
+
+        <!-- Section -->
+        <section>
+            <header>
+                <h3>Our fans</h3>
+                <p>Thank you!<br />.<br />.<br />.</p>
+
+            </header>
+            <div class="content">
+                <div class="gallery">
+                    <a href="images/gallery/fulls/08.jpg" class="portrait"><img src="images/gallery/thumbs/cxlong.png" alt="" /></a>
+                    <a href="images/gallery/fulls/09.jpg" class="portrait"><img src="images/gallery/thumbs/09.jpg" alt="" /></a>
+                    <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section>
+            <header>
+
+                <ul class="items">
+                    <li>
+                        <h3>Email</h3>
+                        <a href="#">information@untitled.ext</a>
+                    </li>
+                    <li>
+                        <h3>Phone</h3>
+                        <a href="#">(000) 000-0000</a>
+                    </li>
+                    <li>
+                        <h3>Address</h3>
+                        <span>1234 Somewhere Road, Nashville, TN 00000</span>
+                    </li>
+                    <li>
+                        <h3>Elsewhere</h3>
+                        <ul class="icons">
+                            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                            <li><a href="#" class="icon brands fa-codepen"><span class="label">Codepen</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </header>
+            <!-- <div class="content">
+                <div class="gallery">
+                    <a href="images/gallery/fulls/08.jpg" class="portrait"><img src="images/gallery/thumbs/cxlong.png" alt="" /></a>
+                    <a href="images/gallery/fulls/09.jpg" class="portrait"><img src="images/gallery/thumbs/09.jpg" alt="" /></a>
+                    <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+                </div>
+            </div> -->
+
+        </section>
+
+        </div>
         </section>
 
 
@@ -432,7 +544,7 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 				-->
 
         <!-- Section -->
-        <section>
+        <!-- <section>
             <header>
                 <h2>Get in touch</h2>
             </header>
@@ -451,20 +563,52 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
                     </ul>
                 </form>
             </div>
-        </section>
+        </section> -->
 
         <!-- Copyright -->
-        <div class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
+        <!-- <div class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</div> -->
 
     </div>
 
     <!-- Scripts -->
+
+    <script>
+        // JavaScript code to change 
+        // the content of <textarea> 
+        function changeContent_11() {
+            var x = document.getElementById('confirm_msg_test');
+            //x.append("1x Classic 10g's\n");
+            var y = document.getElementById('out');
+            // y.append(" +1 ");
+        }
+    </script>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <div hidden id="snipcart" data-api-key="ZjJjNTljMmUtMDg1Yi00MGRhLWFhNDQtZWJjMjk2MjgwN2Y5NjM3MzQwNjE3NjM2MDI4NDM1" data-config-add-product-behavior="none">
+
+        <!-- <billing section="top">
+                <fieldset class="snipcart-form__set">
+                    <div class="snipcart-form__field">
+                        <div class="snipcart-form__field-checkbox">
+                            <snipcart-input name="phone"></snipcart-checkbox>
+                                <snipcart-label class="snipcart__font--tiny snipcart-form__label--checkbox" for="phone">
+                                    Cell No:
+                                </snipcart-label>
+                        </div>
+                    </div>
+                </fieldset>
+            </billing> -->
+
+
+
+    </div>
+    <script src="https://cdn.snipcart.com/themes/v3.0.20/default/snipcart.js"></script>
 
 </body>
 
